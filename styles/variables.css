@@ -1,18 +1,22 @@
 :root {
-  --main-font-family: "IBM Plex mono";
-  --bg-image: url("../images/cover-image-dark.png");
+  --main-font: "IBM Plex mono";
+  --cover-image: url(../images/cover-image-dark.png);
   --bg-color: #000028;
-  --button-color: #FF0070;
-  --button-hover-color: #FF007066;
-  --title-color: #DB00FF;
-  --primary-subtitle-color: #000028;
-  --secondary-subtitle-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --font-size-base: 18px;
-  --font-weight-normal: 400;
-  --font-weight-bold: 700;
-  --line-height-base: 23.4px;
-  --gap-base: 10px;
-  --gap-medium: 20px;
+  --text-color: #f1b2ce;
+  --accent-text-color: #000028;
+  --accent-color: #ff0070;
+  --big-text-color: #db00ff;
+  --decoration-color: #ff0070;
+  --border-color-hover: rgba(255, 0, 112, 0.4);
+  --text-weight-normal: normal;
+  --text-weight-bold: bold;
+  --main-font-size: 18px;
+  --logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
+
+@media (width >= 768px) {
+  :root {
+    --logo-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+  
