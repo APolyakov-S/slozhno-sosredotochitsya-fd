@@ -5,15 +5,13 @@
   --big-text-color: #ffc2e6;
   --decoration-color: #353430;
   --border-color-hover: rgba(53, 52, 48, 0.4);
+    .page {
+      --bg-color: #fff1f7;
+      --cover-image: url(../images/cover-image-light.png);
 }
-
-.theme-light .page {
-  --bg-color: #fff1f7;
-  --cover-image: url(../images/cover-image-light.png);
-}
-
-.theme-light .header__rec {
+  .header__rec {
   display: none;
+}
 }
 
 

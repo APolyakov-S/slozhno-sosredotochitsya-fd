@@ -25,7 +25,7 @@
 .decorated-zone {
   position: relative;
 }
-
+/* уголки*/
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -49,7 +49,7 @@
   left: 9px;
   z-index: -1;
 }
-
+/* надпись rec*/
 .header__rec {
   display: block;
   position: absolute;
@@ -60,7 +60,7 @@
   font-size: var(--main-font-size, 18px);
   z-index: -1;
 }
-
+/* кружочек rec*/
 .header__rec::before {
   content: "";
   position: absolute;
@@ -72,7 +72,7 @@
   left: 42px;
   top: 7px;
 }
-
+/* переключатели тем*/
 .header__theme-menu-list {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -127,7 +127,7 @@
   line-height: 23.4px;
   margin-block-end: 10px;
 }
-
+/* начало секций*/
 .content {
   display: grid;
   inline-size: 100%;
@@ -166,10 +166,10 @@
   line-height: 23.4px;
   margin-block-end: 20px;
 }
-
+/* ссылка в тексте*/
 .text-link {
   text-decoration: none;
-  text-shadow: 1px 1px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   cursor: pointer;
 }
 .text-link:hover {
@@ -185,11 +185,8 @@
 }
 
 .subtitle {
-  font-family: var(--main-font, monospace);
   font-weight: var(--text-weight-normal, normal);
-  font-size: var(--main-font-size, 18px);
   margin-block-start: 18px;
-  line-height: 23.4px;
 }
 
 .gallery {
@@ -225,7 +222,7 @@
   line-height: 95.7px;
 }
 
-@media (width >= 750px) {
+@media (width >= 768px) {
   .header {
     display: grid;
     grid-template-rows: 4fr 1fr 4fr;
@@ -276,8 +273,8 @@
     gap: 20px;
   }
 
-  .section__title_what {
-    width: 20%;
+  .content__section_what .section__title {
+	  width: 20%
   }
 
   .content__section_how {
@@ -311,7 +308,7 @@
   }
 }
 
-@media (width >= 1000px) {
+@media (width >= 1024px) {
   .header__theme-menu {
     display: grid;
     align-self: start;
@@ -339,14 +336,14 @@
     grid-template-rows: min-content 1fr;
   }
 
-  .section__title_what {
-    grid-column: 1/ 4;
+  .content__section_what .section__title {
+	  grid-column: 1/ 4;
     width: 33%;
   }
 
-  .section__list_what {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  .content__section_what .section__list {
+	  display: grid;
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
   }
 
