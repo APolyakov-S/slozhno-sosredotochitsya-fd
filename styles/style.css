@@ -274,7 +274,7 @@
   }
 
   .content__section_what .section__title {
-	  width: 20%
+    width: 20%;
   }
 
   .content__section_how {
@@ -337,13 +337,13 @@
   }
 
   .content__section_what .section__title {
-	  grid-column: 1/ 4;
+    grid-column: 1/ 4;
     width: 33%;
   }
 
   .content__section_what .section__list {
-	  display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
